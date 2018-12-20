@@ -71,9 +71,10 @@ public class EnemySkills : MonoBehaviour {
         //Sterben
         if (Health < 1)
         {
-                Destroy(this.gameObject);
-                gameCo.score += 2;
-          
+            gameCo.score += 2;
+            Destroy(this.gameObject);
+                
+
         }
 
 
