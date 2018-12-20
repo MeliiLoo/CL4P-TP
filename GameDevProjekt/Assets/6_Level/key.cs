@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class key : MonoBehaviour {
 
     public GameControl gc;
+    public int value;
     public Text keyText;
     [SerializeField]
     private GameObject keyObject;
@@ -20,7 +21,7 @@ public class key : MonoBehaviour {
     {  
         if (collision.gameObject.CompareTag("Player"))
         {  
-            gc.gotKey +=1;
+            gc.gotKey = value;
             gc.score +=10;
             Destroy(this.gameObject);           
         }
