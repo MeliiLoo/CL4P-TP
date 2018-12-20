@@ -21923,6 +21923,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 1372833146}
   coin: {fileID: 1166413369}
+  CoinSound1: {fileID: 8300000, guid: 5ac6242608b593342802f2c42954d298, type: 3}
+  CoinSound2: {fileID: 8300000, guid: 16f6ba62752f6f340a663ecd14475490, type: 3}
 --- !u!58 &579760154
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -24319,6 +24321,8 @@ MonoBehaviour:
   health: 0
   ChangeCharacterSound: {fileID: 8300000, guid: 3946d73f8f182e745adebe10ed353103,
     type: 3}
+  CharacterDead: {fileID: 8300000, guid: 7e8fa89919521d84b8180dc811d7c545, type: 3}
+  GameOver: {fileID: 8300000, guid: 0520e29d0a06c834e89392b804ed5507, type: 3}
   isDead1: 0
   isDead2: 0
   isDead3: 0
@@ -25749,6 +25753,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 1372833146}
   coin: {fileID: 389309708}
+  CoinSound1: {fileID: 8300000, guid: 5ac6242608b593342802f2c42954d298, type: 3}
+  CoinSound2: {fileID: 8300000, guid: 16f6ba62752f6f340a663ecd14475490, type: 3}
 --- !u!58 &673262405
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -30409,6 +30415,8 @@ MonoBehaviour:
   play2G: {fileID: 954567625}
   play3: {fileID: 79385408}
   play3G: {fileID: 79385405}
+  BadBonus1: {fileID: 8300000, guid: f94ab277ece8faf45935ac2b1966185a, type: 3}
+  BadBonus2: {fileID: 8300000, guid: 1b35789828ff58c41b0c2d6680b6748e, type: 3}
 --- !u!70 &811468293
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -51087,6 +51095,7 @@ MonoBehaviour:
   keyText: {fileID: 2139467139}
   gameOver: {fileID: 792762255}
   finishText: {fileID: 2026602838}
+  GameOverSound: {fileID: 8300000, guid: 0520e29d0a06c834e89392b804ed5507, type: 3}
 --- !u!4 &1373485633 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4679494325761222, guid: c5e9499e094c6154ea5baf1336a43d9d,
@@ -53499,6 +53508,8 @@ MonoBehaviour:
   play2G: {fileID: 954567625}
   play3: {fileID: 79385408}
   play3G: {fileID: 79385405}
+  BadBonus1: {fileID: 8300000, guid: f94ab277ece8faf45935ac2b1966185a, type: 3}
+  BadBonus2: {fileID: 8300000, guid: 1b35789828ff58c41b0c2d6680b6748e, type: 3}
 --- !u!70 &1437966324
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -58955,6 +58966,7 @@ MonoBehaviour:
   play2G: {fileID: 954567625}
   play3: {fileID: 79385408}
   play3G: {fileID: 79385405}
+  BonusSound: {fileID: 8300000, guid: 5ec70624fb09a5643891bfc29765bace, type: 3}
 --- !u!4 &1579514252
 Transform:
   m_ObjectHideFlags: 0
@@ -59915,6 +59927,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 1372833146}
   coin: {fileID: 914277013}
+  CoinSound1: {fileID: 8300000, guid: 5ac6242608b593342802f2c42954d298, type: 3}
+  CoinSound2: {fileID: 8300000, guid: 16f6ba62752f6f340a663ecd14475490, type: 3}
 --- !u!58 &1600534108
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -62304,6 +62318,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 1372833146}
   coin: {fileID: 1790993965}
+  CoinSound1: {fileID: 8300000, guid: 5ac6242608b593342802f2c42954d298, type: 3}
+  CoinSound2: {fileID: 8300000, guid: 16f6ba62752f6f340a663ecd14475490, type: 3}
 --- !u!58 &1686475773
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -64275,6 +64291,7 @@ MonoBehaviour:
   value: 1
   keyText: {fileID: 2139467139}
   keyObject: {fileID: 1011806094}
+  KeySound: {fileID: 8300000, guid: 2279ea9b8648f2a40b8e79fa4f34dbb5, type: 3}
 --- !u!4 &1746959820
 Transform:
   m_ObjectHideFlags: 0
@@ -76717,6 +76734,7 @@ MonoBehaviour:
   play2G: {fileID: 954567625}
   play3: {fileID: 79385408}
   play3G: {fileID: 79385405}
+  BonusSound: {fileID: 8300000, guid: 5ec70624fb09a5643891bfc29765bace, type: 3}
 --- !u!4 &2080674914
 Transform:
   m_ObjectHideFlags: 0
@@ -78811,6 +78829,8 @@ MonoBehaviour:
   play2G: {fileID: 954567625}
   play3: {fileID: 79385408}
   play3G: {fileID: 79385405}
+  BadBonus1: {fileID: 8300000, guid: f94ab277ece8faf45935ac2b1966185a, type: 3}
+  BadBonus2: {fileID: 8300000, guid: 1b35789828ff58c41b0c2d6680b6748e, type: 3}
 --- !u!70 &2141006474
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

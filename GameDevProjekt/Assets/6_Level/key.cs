@@ -11,7 +11,7 @@ public class key : MonoBehaviour {
     public Text keyText;
     [SerializeField]
     private GameObject keyObject;
-
+    public AudioClip KeySound; 
     void Start(){
 
     }
@@ -20,7 +20,8 @@ public class key : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D collision)
     {  
         if (collision.gameObject.CompareTag("Player"))
-        {  
+        {
+            SoundManager.instance.RandomizeSfx(KeySound);
             gc.gotKey = value;
             gc.score +=10;
             Destroy(this.gameObject);           

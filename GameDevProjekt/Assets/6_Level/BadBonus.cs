@@ -12,6 +12,8 @@ public class BadBonus : MonoBehaviour {
 	public GameObject play2G;
 	public Character3Health play3;
 	public GameObject play3G;
+    public AudioClip BadBonus1;
+    public AudioClip BadBonus2;
 	
 	
 	// Use this for initialization
@@ -21,8 +23,9 @@ public class BadBonus : MonoBehaviour {
 	private void OnTriggerEnter2D(Collider2D collision){
        
         if (collision.gameObject.CompareTag("Player"))
-        {       
-			Destroy(this.gameObject);
+        {
+            SoundManager.instance.RandomizeSfx(BadBonus1, BadBonus2);
+            Destroy(this.gameObject);
             live = 10;
 			
 			if(play1G.gameObject.activeSelf==true){

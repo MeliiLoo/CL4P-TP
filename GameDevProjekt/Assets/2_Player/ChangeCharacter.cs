@@ -14,7 +14,10 @@ public class ChangeCharacter : MonoBehaviour {
     public float jumpForce;
     public float health;
     public AudioClip ChangeCharacterSound;
+    public AudioClip CharacterDead;
+    public AudioClip GameOver; 
 
+    
     int activeCharacter;
 
     public bool isDead1;
@@ -25,6 +28,7 @@ public class ChangeCharacter : MonoBehaviour {
     private GameControl gamectrl;
     [SerializeField]
     private GameObject gameOver;
+
 
     // Use this for initialization
     void Start () {
@@ -79,7 +83,9 @@ public class ChangeCharacter : MonoBehaviour {
                     character2.gameObject.SetActive(false);
                     character3.gameObject.SetActive(false);
 
+                    SoundManager.instance.RandomizeSfx(CharacterDead);
                     activeCharacter = 2;
+
 
                     break;
                 }
@@ -109,6 +115,7 @@ public class ChangeCharacter : MonoBehaviour {
                     character3.gameObject.SetActive(false);
 
                     activeCharacter = 3;
+                    SoundManager.instance.RandomizeSfx(CharacterDead);
 
                     break;
                 }
@@ -138,7 +145,7 @@ public class ChangeCharacter : MonoBehaviour {
                     character1.gameObject.SetActive(false);
                     character2.gameObject.SetActive(false);
                     character3.gameObject.SetActive(false);
-
+                    SoundManager.instance.RandomizeSfx(CharacterDead);
                     activeCharacter = 1;
 
                     break;
@@ -148,6 +155,7 @@ public class ChangeCharacter : MonoBehaviour {
         }
 
         if (isDead1 && isDead2 && isDead3) {
+            SoundManager.instance.RandomizeSfx(GameOver);
             gameOver.SetActive(true);
             gamectrl.savePoints();
         }

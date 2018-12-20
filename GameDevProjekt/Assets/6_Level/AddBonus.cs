@@ -12,6 +12,8 @@ public class AddBonus : MonoBehaviour {
 	public GameObject play2G;
 	public Character3Health play3;
 	public GameObject play3G;
+    public AudioClip BonusSound; 
+    
 	
 	
 	// Use this for initialization
@@ -21,8 +23,9 @@ public class AddBonus : MonoBehaviour {
 	private void OnTriggerEnter2D(Collider2D collision){
        
         if (collision.gameObject.CompareTag("Player"))
-        {       
-			Destroy(this.gameObject);
+        {
+            SoundManager.instance.RandomizeSfx(BonusSound);
+            Destroy(this.gameObject);
             live = 10;
 			
 			if(play1G.gameObject.activeSelf==true){

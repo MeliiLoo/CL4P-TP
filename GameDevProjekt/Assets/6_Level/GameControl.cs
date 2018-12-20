@@ -15,6 +15,7 @@ public class GameControl : MonoBehaviour {
 	public Text keyText;
 	public GameObject gameOver;
 	public GameObject finishText;
+    public AudioClip GameOverSound;
 	
 
 	// Use this for initialization
@@ -46,8 +47,8 @@ public class GameControl : MonoBehaviour {
  
 private void timerEnded()
  {
-
-	gameOver.SetActive(true);
+        SoundManager.instance.RandomizeSfx(GameOverSound);
+        gameOver.SetActive(true);
 	savePoints();
  }
 
