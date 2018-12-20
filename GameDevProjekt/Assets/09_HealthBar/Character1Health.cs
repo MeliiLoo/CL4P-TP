@@ -7,6 +7,7 @@ public class Character1Health : MonoBehaviour
 {
     [SerializeField]
     private Character character;
+    public AudioClip GetHit1; 
 
 
 
@@ -43,6 +44,7 @@ public class Character1Health : MonoBehaviour
                 else
                 {
                     health -= 10;
+                    SoundManager.instance.RandomizeSfx(GetHit1);
                     HealthBar();
 
                     if (health < 1) {

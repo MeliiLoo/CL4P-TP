@@ -13,6 +13,7 @@ public class ChangeCharacter : MonoBehaviour {
     public float moveSpeed;
     public float jumpForce;
     public float health;
+    public AudioClip ChangeCharacterSound;
 
     int activeCharacter;
 
@@ -43,9 +44,12 @@ public class ChangeCharacter : MonoBehaviour {
         if ((Input.GetKeyDown("1") || Input.GetMouseButtonDown(0)) && activeCharacter <3)
         {
             activeCharacter++;
+            SoundManager.instance.RandomizeSfx(ChangeCharacterSound);
         }
         else if((Input.GetKeyDown("1") || Input.GetMouseButtonDown(0)) && activeCharacter >2) {
             activeCharacter = 1;
+            SoundManager.instance.RandomizeSfx(ChangeCharacterSound);
+
         }
 
         

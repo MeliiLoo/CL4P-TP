@@ -3581,6 +3581,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 11400000, guid: 3013bd24e4088924681680873957b50e, type: 2}
+  GetHit2: {fileID: 8300000, guid: 7e8fa89919521d84b8180dc811d7c545, type: 3}
   isDead: 0
   health: 0
   maxHealth: 0
@@ -4049,6 +4050,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameCo: {fileID: 1372833146}
+  DeathJump1: {fileID: 8300000, guid: 8c54adc5f3449344cb4584793de91209, type: 3}
 --- !u!61 &88929472
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4395,6 +4397,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameCo: {fileID: 1372833146}
+  DeathJump1: {fileID: 8300000, guid: 8c54adc5f3449344cb4584793de91209, type: 3}
 --- !u!114 &94955002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16480,6 +16483,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameCo: {fileID: 1372833146}
+  DeathJump1: {fileID: 8300000, guid: 8c54adc5f3449344cb4584793de91209, type: 3}
 --- !u!114 &429776496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18285,6 +18289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameCo: {fileID: 1372833146}
+  DeathJump1: {fileID: 8300000, guid: 8c54adc5f3449344cb4584793de91209, type: 3}
 --- !u!61 &479454666
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20105,11 +20110,11 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.01
+  near clip plane: 0.1
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 12
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -20133,7 +20138,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.9, y: -1.8720002, z: -9.986328}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 822244417}
@@ -22453,6 +22458,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 11400000, guid: 46f24e82ed179094c8dd440bff5760f0, type: 2}
+  GetHit1: {fileID: 8300000, guid: 7e8fa89919521d84b8180dc811d7c545, type: 3}
   health: 0
   maxHealth: 0
   healthBar: {fileID: 653424680}
@@ -24311,6 +24317,8 @@ MonoBehaviour:
   moveSpeed: 0
   jumpForce: 0
   health: 0
+  ChangeCharacterSound: {fileID: 8300000, guid: 3946d73f8f182e745adebe10ed353103,
+    type: 3}
   isDead1: 0
   isDead2: 0
   isDead3: 0
@@ -24332,6 +24340,8 @@ MonoBehaviour:
   rbo2: {fileID: 596728101}
   rbo3: {fileID: 954567625}
   rbo4: {fileID: 79385405}
+  JumpSound1: {fileID: 8300000, guid: 8104283af7aea2f48bc1c1425016ddfc, type: 3}
+  JumpSound2: {fileID: 8300000, guid: f038bbbee67636d4bb46f8ebfd0ed93a, type: 3}
 --- !u!50 &646209119
 Rigidbody2D:
   serializedVersion: 4
@@ -34167,6 +34177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameCo: {fileID: 1372833146}
+  DeathJump1: {fileID: 8300000, guid: 8c54adc5f3449344cb4584793de91209, type: 3}
 --- !u!1001 &892972558
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36685,6 +36696,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 11400000, guid: 8f252c2256e82fc4d8ec83c88cde76c3, type: 2}
+  GetHit3: {fileID: 8300000, guid: 7e8fa89919521d84b8180dc811d7c545, type: 3}
   isDead: 0
   health: 0
   maxHealth: 0
@@ -37279,6 +37291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameCo: {fileID: 1372833146}
+  DeathJump1: {fileID: 8300000, guid: 8c54adc5f3449344cb4584793de91209, type: 3}
 --- !u!61 &980819540
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -51961,6 +51974,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameCo: {fileID: 1372833146}
+  DeathJump1: {fileID: 8300000, guid: 8c54adc5f3449344cb4584793de91209, type: 3}
 --- !u!61 &1397997933
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -53725,7 +53739,7 @@ GameObject:
   - component: {fileID: 1441341511}
   - component: {fileID: 1441341510}
   m_Layer: 0
-  m_Name: SoundController
+  m_Name: SoundManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53757,8 +53771,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5881a66b30d09584a9d0e894dbadc2bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  efxSource: {fileID: 0}
-  musicSource: {fileID: 0}
+  efxSource: {fileID: 1441341512}
+  musicSource: {fileID: 1441341511}
   lowPitchRange: 0.95
   highPitchRange: 1.05
 --- !u!82 &1441341511

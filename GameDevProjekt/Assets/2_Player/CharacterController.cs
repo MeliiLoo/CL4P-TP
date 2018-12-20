@@ -14,6 +14,9 @@ public class CharacterController : MonoBehaviour
     bool facingRight;
 
     public GameObject rbo2, rbo3, rbo4;
+    public AudioClip JumpSound1;
+    public AudioClip JumpSound2; 
+
 
     Rigidbody2D rb;
     Rigidbody2D rb2;
@@ -68,7 +71,9 @@ public class CharacterController : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space) && !isJumping)
             {
-                isJumping = true;
+
+            SoundManager.instance.RandomizeSfx(JumpSound1, JumpSound2);
+            isJumping = true;
 
                 
 
