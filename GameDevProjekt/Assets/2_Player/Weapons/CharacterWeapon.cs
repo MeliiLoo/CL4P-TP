@@ -15,8 +15,10 @@ public class CharacterWeapon : MonoBehaviour {
     // Update is called once per frame
     void Update () {
         if (Input.GetButtonDown("Fire1"))
-            SoundManager.instance.RandomizeSfx(PengPengSound1, PengPengSound2);
-        Shoot();
+
+            Shoot();
+        SoundManager.instance.RandomizeSfx(PengPengSound1, PengPengSound2);
+       
 	}
 
     void Shoot() {
