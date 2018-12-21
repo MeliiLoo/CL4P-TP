@@ -32,6 +32,14 @@ public class CharacterBullet : MonoBehaviour
 
         }
 
+        TowerHealth tower = hit.GetComponent<TowerHealth>();
+        if (tower != null)
+        {
+            tower.TakeDamage(damage);
+            Destroy(this.gameObject);
+
+        }
+
     }
 }
     
