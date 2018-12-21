@@ -22011,7 +22011,6 @@ MonoBehaviour:
   gm: {fileID: 1372833146}
   coin: {fileID: 1166413369}
   CoinSound1: {fileID: 8300000, guid: 5ac6242608b593342802f2c42954d298, type: 3}
-  CoinSound2: {fileID: 8300000, guid: 16f6ba62752f6f340a663ecd14475490, type: 3}
 --- !u!58 &579760154
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -24432,7 +24431,6 @@ MonoBehaviour:
   rbo3: {fileID: 954567625}
   rbo4: {fileID: 79385405}
   JumpSound1: {fileID: 8300000, guid: 8104283af7aea2f48bc1c1425016ddfc, type: 3}
-  JumpSound2: {fileID: 8300000, guid: f038bbbee67636d4bb46f8ebfd0ed93a, type: 3}
 --- !u!50 &646209119
 Rigidbody2D:
   serializedVersion: 4
@@ -25841,7 +25839,6 @@ MonoBehaviour:
   gm: {fileID: 1372833146}
   coin: {fileID: 389309708}
   CoinSound1: {fileID: 8300000, guid: 5ac6242608b593342802f2c42954d298, type: 3}
-  CoinSound2: {fileID: 8300000, guid: 16f6ba62752f6f340a663ecd14475490, type: 3}
 --- !u!58 &673262405
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -42545,12 +42542,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1125276844}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -40.52, y: -1.84, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1304989563}
-  m_Father: {fileID: 1226445877}
-  m_RootOrder: 3
+  m_Children: []
+  m_Father: {fileID: 1304989563}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1125276846
 MonoBehaviour:
@@ -46661,7 +46657,7 @@ RectTransform:
   - {fileID: 2058769610}
   - {fileID: 375413938}
   - {fileID: 2091662936}
-  - {fileID: 1125276845}
+  - {fileID: 1304989563}
   - {fileID: 792762256}
   - {fileID: 1645909982}
   - {fileID: 575437916}
@@ -48769,16 +48765,17 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1304989562}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 89.30885}
-  m_LocalScale: {x: 1, y: 1, z: 0.057552345}
+  m_LocalPosition: {x: 0, y: 0, z: 89.30886}
+  m_LocalScale: {x: 1, y: 1, z: 0.05755235}
   m_Children:
   - {fileID: 1248328218}
-  m_Father: {fileID: 1125276845}
-  m_RootOrder: 0
+  - {fileID: 1125276845}
+  m_Father: {fileID: 1226445877}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -305.97998, y: 256.83997}
+  m_AnchoredPosition: {x: 55, y: -12.5}
   m_SizeDelta: {x: 110, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1304989564
@@ -60049,7 +60046,6 @@ MonoBehaviour:
   gm: {fileID: 1372833146}
   coin: {fileID: 914277013}
   CoinSound1: {fileID: 8300000, guid: 5ac6242608b593342802f2c42954d298, type: 3}
-  CoinSound2: {fileID: 8300000, guid: 16f6ba62752f6f340a663ecd14475490, type: 3}
 --- !u!58 &1600534108
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -62440,7 +62436,6 @@ MonoBehaviour:
   gm: {fileID: 1372833146}
   coin: {fileID: 1790993965}
   CoinSound1: {fileID: 8300000, guid: 5ac6242608b593342802f2c42954d298, type: 3}
-  CoinSound2: {fileID: 8300000, guid: 16f6ba62752f6f340a663ecd14475490, type: 3}
 --- !u!58 &1686475773
 CircleCollider2D:
   m_ObjectHideFlags: 0
