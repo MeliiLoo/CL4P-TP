@@ -10,6 +10,8 @@ public class SkeletonTower : MonoBehaviour
     float fireRate = 1f;
     float nextFire;
 
+    public bool inRange;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +26,7 @@ public class SkeletonTower : MonoBehaviour
     }
 
     void CheckIfTimeToFire() {
-        if (Time.time > nextFire) {
+        if (Time.time > nextFire && inRange) {
             Instantiate(bullet, transform.position, Quaternion.identity);
             nextFire = Time.time + fireRate;
         }

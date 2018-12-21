@@ -66,5 +66,11 @@ public class Character2Health : MonoBehaviour
         healthBar.fillAmount = health/maxHealth;
 
     }
+    public void TakeDamage(int damage)
+    {
+
+        health -= damage;
+        HealthBar();
+    }
 }
 

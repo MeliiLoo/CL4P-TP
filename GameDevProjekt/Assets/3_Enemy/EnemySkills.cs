@@ -28,6 +28,7 @@ public class EnemySkills : MonoBehaviour {
     public Launcher launchiY;
     private float fireDelay = 1f;
     private bool canShoot = true;
+    public bool inRange;
 
     void Start() {
         // GameObject und SpriteRenderer holen
@@ -87,7 +88,8 @@ public class EnemySkills : MonoBehaviour {
    
 
 public void shootL(){
-	if(canShoot){
+	if(canShoot && inRange)
+        {
 			Instantiate(Weapon,
             ls,
             Quaternion.identity);
@@ -97,7 +99,8 @@ public void shootL(){
 }
 
 public void shootR(){
-	if(canShoot){
+	if(canShoot && inRange)
+        {
 			Instantiate(Weapon1,
             ls,
             Quaternion.identity);

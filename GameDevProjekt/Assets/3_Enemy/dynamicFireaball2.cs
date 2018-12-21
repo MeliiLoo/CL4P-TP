@@ -6,6 +6,8 @@ public class dynamicFireaball2 : MonoBehaviour {
 
 private Vector2 newForce;
 private Rigidbody2D firi;
+    [SerializeField]
+    private int damage = 10;
 
 	// Use this for initialization
 	void Start () {
@@ -18,4 +20,32 @@ private Rigidbody2D firi;
 		newForce = new Vector2(-5,0);
 	   	firi.AddForce(newForce, ForceMode2D.Impulse);
 	}
+    void OnTriggerEnter2D(Collider2D hit)
+    {
+        Character1Health player = hit.GetComponent<Character1Health>();
+        if (player != null)
+        {
+            player.TakeDamage(damage);
+            Destroy(this.gameObject);
+
+        }
+
+        Character2Health player2 = hit.GetComponent<Character2Health>();
+        if (player2 != null)
+        {
+            player2.TakeDamage(damage);
+            Destroy(this.gameObject);
+
+        }
+
+
+
+        Character3Health player3 = hit.GetComponent<Character3Health>();
+        if (player3 != null)
+        {
+            player3.TakeDamage(damage);
+            Destroy(this.gameObject);
+        }
+
+    }
 }

@@ -19,10 +19,9 @@ public class ChangeCharacter : MonoBehaviour {
 
     
     int activeCharacter;
-
     public bool isDead1;
-    public bool isDead2 = false;
-    public bool isDead3 = false;
+    public bool isDead2;
+    public bool isDead3;
 
     [SerializeField]
     private GameControl gamectrl;
@@ -72,6 +71,7 @@ public class ChangeCharacter : MonoBehaviour {
                     moveSpeed = char1.speed;
                     jumpForce = char1.jump;
                     health = char1.health;
+                   
 
                     break;
 
@@ -105,6 +105,8 @@ public class ChangeCharacter : MonoBehaviour {
                     moveSpeed = char2.speed;
                     jumpForce = char2.jump;
                     health = char2.health;
+                    
+                    break;
 
                 }
 
@@ -135,6 +137,7 @@ public class ChangeCharacter : MonoBehaviour {
                     moveSpeed = char3.speed;
                     jumpForce = char3.jump;
                     health = char3.health;
+                
 
                     break;
 
