@@ -1281,12 +1281,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Verwendete Assets:
-
-
-    Ground:
-
-    Player:'
+  m_Text: 
 --- !u!222 &1192892058
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1372,9 +1367,9 @@ MonoBehaviour:
 
     Springen: Space
 
-    Charakter wechseln: Taste 1
+    Charakter wechseln: Taste 1 oder linke Maustaste
 
-    Schiessen: CTRL oder rechte Maustaste'
+    Schiessen: Taste 2 oder rechte Maustaste'
 --- !u!222 &1436958618
 CanvasRenderer:
   m_ObjectHideFlags: 0
