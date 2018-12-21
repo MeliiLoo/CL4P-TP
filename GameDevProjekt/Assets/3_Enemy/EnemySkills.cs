@@ -29,6 +29,8 @@ public class EnemySkills : MonoBehaviour {
     private float fireDelay = 1f;
     private bool canShoot = true;
     public bool inRange;
+    public AudioClip EnemyDeathSound1;
+
 
     void Start() {
         // GameObject und SpriteRenderer holen
@@ -72,6 +74,7 @@ public class EnemySkills : MonoBehaviour {
         //Sterben
         if (Health < 1)
         {
+            SoundManager.instance.RandomizeSfx(EnemyDeathSound1);
             gameCo.score += 2;
             Destroy(this.gameObject);
                 

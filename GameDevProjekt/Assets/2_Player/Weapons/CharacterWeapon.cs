@@ -8,8 +8,8 @@ public class CharacterWeapon : MonoBehaviour {
     private Transform firePoint;
     [SerializeField]
     private GameObject bullet;
-    public AudioClip PengPengSound1;
-    public AudioClip PengPengSound2; 
+    // public AudioClip PengPengSound1;
+
     
 
     // Update is called once per frame
@@ -17,7 +17,7 @@ public class CharacterWeapon : MonoBehaviour {
         if (Input.GetButtonDown("Fire1"))
 
             Shoot();
-        SoundManager.instance.RandomizeSfx(PengPengSound1, PengPengSound2);
+        // SoundManager.instance.RandomizeSfx(PengPengSound1);
        
 	}
 

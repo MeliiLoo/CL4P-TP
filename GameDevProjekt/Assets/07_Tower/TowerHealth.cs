@@ -8,6 +8,7 @@ public class TowerHealth : MonoBehaviour
     private int health = 100;
     [SerializeField]
     private GameControl gameCo;
+    public AudioClip DeathTowerSound; 
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +22,7 @@ public class TowerHealth : MonoBehaviour
         //Sterben
         if (health < 1)
         {
+            SoundManager.instance.RandomizeSfx(DeathTowerSound);
             gameCo.score += 10;
             Destroy(this.gameObject);
 
